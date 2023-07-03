@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Flask Intro - login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please Register</h1>
+      <br>
+      <form action="/" method="post">
+        <input type="text" placeholder="name" name="name" value="{{
+          request.form.name }}">
+       
+          <input type="text" placeholder="email" name="email" value="{{
+            request.form.email }}">
+         <input type="password" placeholder="Password" name="password" value="{{
+          request.form.password }}"><br><br>
+        <input class="btn btn-default" type="submit" value="Register">
+      </form>
+    </div>
+  </body>
+</html>
